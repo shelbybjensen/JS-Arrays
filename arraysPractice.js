@@ -59,7 +59,16 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 var nums = [1,2,3,6,22,98,45,23,22,12];
 //Write a function named evenFinder that is given nums as it's only argument and removes all values that aren't even from the given array.
 
-  //Code Here
+  function evenFinder(arr) {
+     for (var i= arr.length; i >= 0; i--) {
+          if (arr[i] % 2 !== 0) {
+            arr.splice(i,1);
+          }
+     }
+     return arr;
+  }
+
+evenFinder(nums);
 
 
 //Next problem
