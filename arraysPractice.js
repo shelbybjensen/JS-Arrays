@@ -81,8 +81,21 @@ var odds = [];
 //Have divider return an Array with the first item in the array being the evens array (all the even values from nums) and the second item in the Array being the odds array(all the odd values from nums).
 
 
+function divider(nums, evens, odds) {
+    var temp= [];
+    for (var i = 0; i < nums.length; i++){
+      if(nums[i] %2 === 0) {
+        evens.push(nums[i]);
+      } else {
+        odds.push(nums[i])
+      }
+    }
+  temp.push(evens)
+  temp.push(odds)
+  return temp;
+}
 
-  //Code Here
+divider(nums, evens, odds)
 
 
 //Next Problem
@@ -104,8 +117,10 @@ var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 var str = 'this is my sentence';
 //Write a function called reverse that takes a given str as it's only argument and returns that string after it's been reversed
 
-  //Code Here
-
+  function reverse(str) {
+    return str.split("").reverse().join("")
+  }
+reverse(str)
 
 //Next Problem
 
