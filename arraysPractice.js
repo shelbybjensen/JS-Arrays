@@ -139,20 +139,40 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   myGroceryList then return the new, updated grocery list.
 */
 
-  //Code Here
+ function removeItem(array, item){
+  for(var i = 0; i < array.length; i++){
+    if(item===array[i]){
+      array.splice(i, 1);
+    }
+  }
+  return array;
+ }
+
+ removeItem(myGroceryList, "hotpockets")
 
 //removeItem(myGroceryList, 'chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
 
 
 
-//Next Problem
+function addItem(array, item){
+  array.push(item);
+  return array;
+}
+addItem(myGroceryList, "tacos")
 
 
 
 //Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 
-  //Code Here
+function maker() {
+  var array = [];
+  for var i = 0: i < 216; i++) {
+    array.push(i)
+  }
+  return array
+}
+maker();
 
 
 
@@ -163,7 +183,15 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 //Write a function called addTen that is given 'numbers' as it's only argument and returns a new
 //array after adding ten to each item in numbers. *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
 
-  //Code Here
+function addTen(array) {
+  var newArray = [];
+  for(var i = 0; i < array.length; i++){
+    var tenAdded = ParseInt(array[i] + 10;
+      newArray.push(tenAdded);
+  }
+  return newArray;
+}
+addTen(numbers);
 
 
 
@@ -184,7 +212,15 @@ for(var i = 0; i < num2; i++){
 //Above is some code that adds a random number of values to both arr1 and arr2.
 //Write a function that is given arr1 and arr2 as it's only arguments. Return the array which is longest.
 
-  //Code Here
+function longestArr(array1, array2){
+  if (array1.length > array2.length) {
+    return array1
+  } else {
+    return array2
+  }
+};
+
+longestArr(arr1, arr2)
 
 
 /*As a continuation of the previous problem, write another function called 'both'.
@@ -192,7 +228,11 @@ for(var i = 0; i < num2; i++){
   'both' should return a new array full of numbers that are found in both arr1 and arr2.
 */
 
-  //Code Here
+function both(array1, array2){
+  var newArray[];
+  for (var i = 0; i < array.length; i++)
+  // not finished 
+}
   
   
   
